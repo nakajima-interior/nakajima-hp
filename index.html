@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>室内装飾 中嶋|千葉県富津市の内装工事(壁紙・カーテン・床材)</title>
+<meta name="description" content="千葉県富津市の室内装飾 中嶋。壁紙・クロス張替え、カーテン・ブラインド、床材・カーペットの施工まで、お部屋の内装のことなら何でもご相談ください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #f28c28;
+    --orange-dark: #d9731a;
+    --cream: #fdf8ef;
+    --green: #6aa84f;
+    --brown: #5c4633;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+    color: var(--brown);
+    background: var(--cream);
+    line-height: 1.8;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ===== ヘッダー ===== */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(92,70,51,.1);
+  }
+  .header-inner {
+    max-width: 1080px; margin: 0 auto; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  .logo { font-size: 1.3rem; font-weight: 900; }
+  .logo span { color: var(--orange); }
+  .header-tel { text-align: right; }
+  .header-tel .tel-number {
+    font-size: 1.4rem; font-weight: 900; color: var(--orange-dark);
+  }
+  .header-tel .tel-note { font-size: .75rem; }
+  nav ul { display: flex; gap: 20px; list-style: none; font-weight: 700; font-size: .95rem; }
+  nav a:hover { color: var(--orange); }
+  @media (max-width: 700px) { nav { display: none; } }
+
+  /* ===== ヒーロー ===== */
+  .hero {
+    background: linear-gradient(135deg, #ffe8c7 0%, #fdf8ef 60%, #e8f3e0 100%);
+    text-align: center;
+    padding: 72px 20px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .hero h1 .accent { color: var(--orange); }
+  .hero p { font-size: clamp(.95rem, 2.5vw, 1.15rem); margin-bottom: 32px; }
+  .hero-badges {
+    display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 36px;
+  }
+  .badge {
+    background: var(--white); border: 3px solid var(--orange);
+    border-radius: 999px; padding: 8px 22px; font-weight: 700; font-size: .95rem;
+    color: var(--orange-dark);
+  }
+  .cta-button {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 1.2rem; font-weight: 900;
+    padding: 16px 48px; border-radius: 999px;
+    box-shadow: 0 4px 0 var(--orange-dark);
+    transition: transform .1s, box-shadow .1s;
+  }
+  .cta-button:hover { transform: translateY(2px); box-shadow: 0 2px 0 var(--orange-dark); }
+
+  /* ===== 共通セクション ===== */
+  section { padding: 72px 20px; }
+  .section-inner { max-width: 1080px; margin: 0 auto; }
+  .section-title { text-align: center; margin-bottom: 48px; }
+  .section-title .en {
+    color: var(--orange); font-size: .9rem; font-weight: 700; letter-spacing: .15em;
+    text-transform: uppercase; display: block; margin-bottom: 4px;
+  }
+  .section-title h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 900; }
+
+  /* ===== サービス ===== */
+  .services { background: var(--white); }
+  .service-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px;
+  }
+  .service-card {
+    background: var(--cream); border-radius: 20px; overflow: hidden;
+    box-shadow: 0 4px 12px rgba(92,70,51,.08);
+  }
+  .service-icon {
+    height: 140px; display: flex; align-items: center; justify-content: center;
+    font-size: 4rem;
+  }
+  .service-card:nth-child(1) .service-icon { background: #ffe3c2; }
+  .service-card:nth-child(2) .service-icon { background: #dff0d3; }
+  .service-card:nth-child(3) .service-icon { background: #fbe6d2; }
+  .service-body { padding: 24px; }
+  .service-body h3 {
+    font-size: 1.2rem; font-weight: 900; margin-bottom: 10px; color: var(--orange-dark);
+  }
+  .service-body p { font-size: .95rem; }
+
+  /* ===== 選ばれる理由 ===== */
+  .reasons { background: var(--cream); }
+  .reason-list { display: grid; gap: 20px; max-width: 760px; margin: 0 auto; }
+  .reason {
+    background: var(--white); border-radius: 16px; padding: 24px 28px;
+    display: flex; gap: 20px; align-items: flex-start;
+    box-shadow: 0 3px 10px rgba(92,70,51,.07);
+  }
+  .reason-num {
+    flex-shrink: 0;
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--orange); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 1.3rem;
+  }
+  .reason h3 { font-size: 1.1rem; font-weight: 900; margin-bottom: 6px; }
+  .reason p { font-size: .95rem; }
+
+  /* ===== 施工の流れ ===== */
+  .flow { background: var(--white); }
+  .flow-steps {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px; max-width: 900px; margin: 0 auto;
+  }
+  .flow-step {
+    background: var(--cream); border-radius: 16px; padding: 24px 16px; text-align: center;
+    position: relative;
+  }
+  .flow-step .step-label {
+    color: var(--green); font-weight: 900; font-size: .85rem; letter-spacing: .1em;
+  }
+  .flow-step .step-emoji { font-size: 2.4rem; margin: 8px 0; }
+  .flow-step h3 { font-size: 1rem; font-weight: 900; margin-bottom: 6px; }
+  .flow-step p { font-size: .85rem; }
+
+  /* ===== 会社概要 ===== */
+  .about { background: var(--cream); }
+  .about-table {
+    max-width: 680px; margin: 0 auto; width: 100%;
+    border-collapse: collapse; background: var(--white);
+    border-radius: 16px; overflow: hidden;
+    box-shadow: 0 3px 10px rgba(92,70,51,.07);
+  }
+  .about-table th, .about-table td {
+    padding: 18px 24px; text-align: left; font-size: .95rem;
+    border-bottom: 1px solid #f0e8dc;
+  }
+  .about-table th { width: 32%; background: #fff4e3; font-weight: 700; }
+  .about-table tr:last-child th, .about-table tr:last-child td { border-bottom: none; }
+
+  /* ===== お問い合わせ ===== */
+  .contact {
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+    color: var(--white); text-align: center;
+  }
+  .contact .section-title .en { color: #ffe3c2; }
+  .contact .section-title h2 { color: var(--white); }
+  .contact-tel {
+    font-size: clamp(1.8rem, 6vw, 3rem); font-weight: 900; margin: 8px 0;
+  }
+  .contact-note { font-size: .95rem; margin-bottom: 8px; }
+  .contact-box {
+    background: rgba(255,255,255,.15); border-radius: 20px;
+    max-width: 560px; margin: 0 auto; padding: 36px 24px;
+  }
+
+  /* ===== フッター ===== */
+  footer {
+    background: var(--brown); color: #f5efe6;
+    text-align: center; padding: 28px 20px; font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">室内装飾 <span>中嶋</span></div>
+    <nav>
+      <ul>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#reasons">選ばれる理由</a></li>
+        <li><a href="#flow">施工の流れ</a></li>
+        <li><a href="#about">会社概要</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="header-tel">
+      <div class="tel-number">📞 0439-XX-XXXX</div>
+      <div class="tel-note">受付時間 8:00〜18:00(日曜定休)</div>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>お部屋の<span class="accent">「模様替えしたい」</span>を、<br>まるごとお手伝いします。</h1>
+  <p>千葉県富津市の内装屋さん。壁紙・カーテン・床のことなら、なんでもご相談ください。</p>
+  <div class="hero-badges">
+    <div class="badge">🏠 地域密着</div>
+    <div class="badge">🔨 確かな職人技</div>
+    <div class="badge">💬 見積り無料</div>
+  </div>
+  <a class="cta-button" href="#contact">お気軽にご相談ください</a>
+</div>
+
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="en">Service</span>
+      <h2>中嶋ができること</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">🧱</div>
+        <div class="service-body">
+          <h3>壁紙・クロス張替え</h3>
+          <p>汚れや剥がれが気になってきた壁紙を、きれいに張り替えます。豊富な見本からお部屋にぴったりの一枚をご提案。一部屋からのご依頼も大歓迎です。</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪟</div>
+        <div class="service-body">
+          <h3>カーテン・ブラインド</h3>
+          <p>採寸から取り付けまでおまかせください。遮光・遮熱カーテンやブラインド、ロールスクリーンなど、窓まわりを快適に彩ります。</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪵</div>
+        <div class="service-body">
+          <h3>床材・カーペット</h3>
+          <p>クッションフロアやカーペットの張替えで、お部屋の印象がガラッと変わります。傷んだ床のご相談もお気軽にどうぞ。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reasons" id="reasons">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="en">Reason</span>
+      <h2>中嶋が選ばれる理由</h2>
+    </div>
+    <div class="reason-list">
+      <div class="reason">
+        <div class="reason-num">1</div>
+        <div>
+          <h3>地元・富津で長年の実績</h3>
+          <p>地域のみなさまに支えられて、富津市を中心にたくさんのお宅の内装を手がけてきました。顔の見えるおつきあいを大切にしています。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="reason-num">2</div>
+        <div>
+          <h3>小さな工事もよろこんで</h3>
+          <p>「トイレの壁紙だけ」「カーテン1枚だけ」でも大丈夫。どんな小さなご依頼にも、ていねいに対応します。</p>
+        </div>
+      </div>
+      <div class="reason">
+        <div class="reason-num">3</div>
+        <div>
+          <h3>お見積り・ご相談は無料</h3>
+          <p>「いくらかかるのか不安…」という方もご安心ください。現地を拝見して、わかりやすいお見積りを無料でお出しします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flow" id="flow">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="en">Flow</span>
+      <h2>ご依頼の流れ</h2>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="step-label">STEP 1</div>
+        <div class="step-emoji">📞</div>
+        <h3>お問い合わせ</h3>
+        <p>お電話でお気軽にご相談ください。</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-label">STEP 2</div>
+        <div class="step-emoji">📏</div>
+        <h3>現地確認・お見積り</h3>
+        <p>お伺いして採寸し、無料でお見積りします。</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-label">STEP 3</div>
+        <div class="step-emoji">🔨</div>
+        <h3>施工</h3>
+        <p>経験豊富な職人がていねいに仕上げます。</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-label">STEP 4</div>
+        <div class="step-emoji">✨</div>
+        <h3>お引き渡し</h3>
+        <p>仕上がりをご確認いただいて完了です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="en">About</span>
+      <h2>会社概要</h2>
+    </div>
+    <table class="about-table">
+      <tr><th>屋号</th><td>室内装飾 中嶋</td></tr>
+      <tr><th>所在地</th><td>千葉県富津市(住所は後日掲載)</td></tr>
+      <tr><th>電話番号</th><td>0439-XX-XXXX</td></tr>
+      <tr><th>営業時間</th><td>8:00〜18:00(日曜定休)</td></tr>
+      <tr><th>事業内容</th><td>壁紙・クロス張替え、カーテン・ブラインド取付、床材・カーペット施工</td></tr>
+      <tr><th>対応エリア</th><td>富津市・君津市・木更津市 ほか近隣地域</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="en">Contact</span>
+      <h2>お問い合わせ</h2>
+    </div>
+    <div class="contact-box">
+      <p class="contact-note">壁紙・カーテン・床のこと、なんでもご相談ください</p>
+      <div class="contact-tel">📞 0439-XX-XXXX</div>
+      <p class="contact-note">受付時間 8:00〜18:00(日曜定休)</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 室内装飾 中嶋(千葉県富津市)</p>
+</footer>
+
+</body>
+</html>
