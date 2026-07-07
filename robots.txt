@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nakajima-interior.github.io/nakajima-hp/sitemap.xml
