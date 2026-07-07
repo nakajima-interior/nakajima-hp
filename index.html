@@ -103,9 +103,10 @@
     box-shadow: 0 4px 12px rgba(92,70,51,.08);
   }
   .service-icon {
-    height: 140px; display: flex; align-items: center; justify-content: center;
-    font-size: 4rem;
+    height: 160px; display: flex; align-items: center; justify-content: center;
+    font-size: 4rem; overflow: hidden;
   }
+  .service-icon svg { width: 100%; height: 100%; }
   .service-card:nth-child(1) .service-icon { background: #ffe3c2; }
   .service-card:nth-child(2) .service-icon { background: #dff0d3; }
   .service-card:nth-child(3) .service-icon { background: #fbe6d2; }
@@ -228,21 +229,96 @@
     </div>
     <div class="service-grid">
       <div class="service-card">
-        <div class="service-icon">🧱</div>
+        <div class="service-icon"><svg viewBox="0 0 280 160" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="壁紙を張り替えているイラスト">
+          <rect width="280" height="160" fill="#ffe3c2"/>
+          <!-- 貼り替え前の壁(右側・くすんだ色) -->
+          <rect x="140" y="20" width="120" height="120" rx="4" fill="#e8dccb"/>
+          <!-- 貼り替え後の壁(左側・明るい花柄) -->
+          <rect x="20" y="20" width="126" height="120" rx="4" fill="#fff8ec"/>
+          <g fill="#f2a65a">
+            <circle cx="45" cy="45" r="7"/><circle cx="95" cy="45" r="7"/>
+            <circle cx="70" cy="75" r="7"/><circle cx="120" cy="75" r="7"/>
+            <circle cx="45" cy="105" r="7"/><circle cx="95" cy="105" r="7"/>
+          </g>
+          <g fill="#8fbf6f">
+            <circle cx="120" cy="45" r="4"/><circle cx="45" cy="75" r="4"/>
+            <circle cx="120" cy="105" r="4"/><circle cx="70" cy="118" r="4"/>
+          </g>
+          <!-- めくれた壁紙の端 -->
+          <path d="M146 20 q14 60 0 120 l14 0 q10 -60 0 -120 z" fill="#f7ead7"/>
+          <!-- ローラー -->
+          <g transform="rotate(18 205 85)">
+            <rect x="198" y="55" width="16" height="34" rx="8" fill="#f28c28"/>
+            <rect x="203" y="89" width="6" height="34" rx="3" fill="#5c4633"/>
+            <rect x="199" y="120" width="14" height="18" rx="6" fill="#6aa84f"/>
+          </g>
+        </svg></div>
         <div class="service-body">
           <h3>壁紙・クロス張替え</h3>
           <p>汚れや剥がれが気になってきた壁紙を、きれいに張り替えます。豊富な見本からお部屋にぴったりの一枚をご提案。一部屋からのご依頼も大歓迎です。</p>
         </div>
       </div>
       <div class="service-card">
-        <div class="service-icon">🪟</div>
+        <div class="service-icon"><svg viewBox="0 0 280 160" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="カーテンのかかった窓のイラスト">
+          <rect width="280" height="160" fill="#dff0d3"/>
+          <!-- カーテンレール -->
+          <rect x="40" y="24" width="200" height="8" rx="4" fill="#5c4633"/>
+          <!-- 窓 -->
+          <rect x="80" y="36" width="120" height="104" rx="6" fill="#bfe3f2"/>
+          <rect x="80" y="36" width="120" height="104" rx="6" fill="none" stroke="#ffffff" stroke-width="6"/>
+          <line x1="140" y1="40" x2="140" y2="136" stroke="#ffffff" stroke-width="5"/>
+          <line x1="84" y1="88" x2="196" y2="88" stroke="#ffffff" stroke-width="5"/>
+          <!-- 窓の外の太陽 -->
+          <circle cx="170" cy="62" r="12" fill="#ffd66b"/>
+          <!-- カーテン(左右) -->
+          <path d="M52 32 q22 54 8 108 l-24 0 q-4 -54 0 -108 z" fill="#f28c28"/>
+          <path d="M64 32 q18 54 6 108 l-16 0 q10 -54 -4 -108 z" fill="#f6a75a"/>
+          <path d="M228 32 q-22 54 -8 108 l24 0 q4 -54 0 -108 z" fill="#f28c28"/>
+          <path d="M216 32 q-18 54 -6 108 l16 0 q-10 -54 4 -108 z" fill="#f6a75a"/>
+          <!-- タッセル -->
+          <ellipse cx="58" cy="96" rx="14" ry="6" fill="#6aa84f"/>
+          <ellipse cx="222" cy="96" rx="14" ry="6" fill="#6aa84f"/>
+        </svg></div>
         <div class="service-body">
           <h3>カーテン・ブラインド</h3>
           <p>採寸から取り付けまでおまかせください。遮光・遮熱カーテンやブラインド、ロールスクリーンなど、窓まわりを快適に彩ります。</p>
         </div>
       </div>
       <div class="service-card">
-        <div class="service-icon">🪵</div>
+        <div class="service-icon"><svg viewBox="0 0 280 160" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="張り替えた床とラグのイラスト">
+          <rect width="280" height="160" fill="#fbe6d2"/>
+          <!-- 壁と幅木 -->
+          <rect x="0" y="0" width="280" height="52" fill="#fff8ec"/>
+          <rect x="0" y="52" width="280" height="8" fill="#e8dccb"/>
+          <!-- フローリング -->
+          <g fill="#d9a05b">
+            <rect x="0" y="60" width="280" height="24"/>
+            <rect x="0" y="88" width="280" height="24"/>
+            <rect x="0" y="116" width="280" height="24"/>
+            <rect x="0" y="144" width="280" height="16"/>
+          </g>
+          <g stroke="#c48a45" stroke-width="3">
+            <line x1="0" y1="86" x2="280" y2="86"/>
+            <line x1="0" y1="114" x2="280" y2="114"/>
+            <line x1="0" y1="142" x2="280" y2="142"/>
+            <line x1="90" y1="60" x2="90" y2="84"/>
+            <line x1="200" y1="60" x2="200" y2="84"/>
+            <line x1="40" y1="88" x2="40" y2="112"/>
+            <line x1="150" y1="88" x2="150" y2="112"/>
+            <line x1="250" y1="88" x2="250" y2="112"/>
+            <line x1="100" y1="116" x2="100" y2="140"/>
+            <line x1="210" y1="116" x2="210" y2="140"/>
+          </g>
+          <!-- ラグ -->
+          <ellipse cx="140" cy="118" rx="62" ry="26" fill="#8fbf6f"/>
+          <ellipse cx="140" cy="118" rx="46" ry="18" fill="#a8d18a"/>
+          <!-- 観葉植物 -->
+          <g>
+            <rect x="228" y="70" width="24" height="20" rx="4" fill="#f28c28"/>
+            <path d="M240 70 q-16 -20 -4 -34 q10 12 4 34 z" fill="#6aa84f"/>
+            <path d="M240 70 q16 -18 6 -32 q-12 10 -6 32 z" fill="#8fbf6f"/>
+          </g>
+        </svg></div>
         <div class="service-body">
           <h3>床材・カーペット</h3>
           <p>クッションフロアやカーペットの張替えで、お部屋の印象がガラッと変わります。傷んだ床のご相談もお気軽にどうぞ。</p>
